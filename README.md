@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# hotglue frontend coding challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Note
+You should get this scaffold running on your machine prior to the interview. You will receive the actual task during the interview.
 
-## Available Scripts
+## Description
+For your frontend technical interview, you will be using this React project, which is a `create-react-app` structure with the following additions:
 
-In the project directory, you can run:
+- Material UI has been installed for some standard components out of the box.
+- There is a function in `src/api.js` called `getSuggestedIcons` which takes a parameter `query`.
 
-### `npm start`
+`getSuggestedIcon` returns a JSON payload containing suggested icons related to the `query` string.
+A sample response is included below:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```json
+[
+    {
+        "id": 616495,
+        "type": 4,
+        "priority": "24.247299",
+        "selection": 1,
+        "premium": 0,
+        "state": 1,
+        "description": "Squid",
+        "colors": "FF0000;808080",
+        "color": 2,
+        "style": 0,
+        "stroke": 1,
+        "detail": 0,
+        "style_id": 8,
+        "style_name": "Flat",
+        "style_slug": "family/special/flat",
+        "style_class": "flat",
+        "family_id": 3,
+        "family_name": "Special",
+        "family_slug": "family/special",
+        "priority_style": "30035.000000",
+        "slug": "free-icon/squid_616495",
+        "license": "2",
+        "added": 1509965237,
+        "pack_id": 616407,
+        "pack_name": "Animals and nature",
+        "pack_slug": "packs/animals-and-nature",
+        "pack_priority": "41.360100",
+        "pack_items": 165,
+        "designer_id": 1,
+        "designer_slug": "freepik",
+        "designer_name": "Freepik",
+        "designer_website": "https://www.freepik.com",
+        "downloads": "258",
+        "views": "0",
+        "tags": "squid,aquarium,sea life,animals,animal,aquatic",
+        "category": "animals",
+        "item_equivalent": "616661",
+        "equivalents": 0,
+        "tags_id": "214,221,22442,129622,181838,193253",
+        "category_id": "11",
+        "images": {
+            "png": {
+                "128": "https://cdn-icons-png.flaticon.com/128/616/616495.png",
+                "512": "https://cdn-icons-png.flaticon.com/512/616/616495.png"
+            }
+        },
+        "editor_choice": true,
+        "style_color": "color",
+        "style_shape": "fill"
+    },
+    {
+        "id": 616661,
+        "type": 4,
+        "priority": "8.615590",
+        "selection": 1,
+        "premium": 0,
+        "state": 1,
+        "description": "Squid",
+        "colors": "FF0000;808080",
+        "color": 2,
+        "style": 0,
+        "stroke": 1,
+        "detail": 0,
+        "style_id": 15,
+        "style_name": "Lineal color",
+        "style_slug": "family/special/lineal-color",
+        "style_class": "linear-colored",
+        "family_id": 3,
+        "family_name": "Special",
+        "family_slug": "family/special",
+        "priority_style": "30035.000000",
+        "slug": "free-icon/squid_616661",
+        "license": "2",
+        "added": 1509965173,
+        "pack_id": 616573,
+        "pack_name": "Animals and nature",
+        "pack_slug": "packs/animals-and-nature-2",
+        "pack_priority": "10.774600",
+        "pack_items": 165,
+        "designer_id": 1,
+        "designer_slug": "freepik",
+        "designer_name": "Freepik",
+        "designer_website": "https://www.freepik.com",
+        "downloads": "13",
+        "views": "0",
+        "tags": "squid,sea life,animals,animal,aquarium,aquatic",
+        "category": "animals",
+        "item_equivalent": "616827",
+        "equivalents": 0,
+        "tags_id": "214,221,22442,129622,181838,193253",
+        "category_id": "11",
+        "images": {
+            "png": {
+                "128": "https://cdn-icons-png.flaticon.com/128/616/616661.png",
+                "512": "https://cdn-icons-png.flaticon.com/512/616/616661.png"
+            }
+        },
+        "editor_choice": true,
+        "style_color": "color",
+        "style_shape": "lineal-color"
+    }
+]
+```
